@@ -4,13 +4,13 @@ var CACHE_NAME = "my-site-cache-v3",
 	shell = [
 		'',
 		'/serviceworkers/index.html',
-		'/serviceworkers//css/bootstrap.min.css',
-		'/serviceworkers//css/jquery.countdown.css',
-		'/serviceworkers//fonts/custom_font/style.css',
-		'/serviceworkers//css/main.min.css',
-		'/serviceworkers//js/lib/require.js',
-		'/serviceworkers//js/start.js',
-		'/serviceworkers//js/config.js'
+		'/serviceworkers/css/bootstrap.min.css',
+		'/serviceworkers/css/jquery.countdown.css',
+		'/serviceworkers/fonts/custom_font/style.css',
+		'/serviceworkers/css/main.min.css',
+		'/serviceworkers/js/lib/require.js',
+		'/serviceworkers/js/start.js',
+		'/serviceworkers/js/config.js'
 	];
 
 self.addEventListener('install', function(event) {
