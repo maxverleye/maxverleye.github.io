@@ -30,6 +30,7 @@ self.addEventListener('fetch', function(event) {
       .then(function(response) {
         // Cache hit - return response
         if (response) {
+        	console.log(RETURN: response.request from CACHE);
           return response;
         }
 
