@@ -129,7 +129,7 @@ define([
 		render: function(o) {
 			var t = this;
 			// render Homepage structure
-			require(['text!private/templates/ContentPageTemplate.html'], function(template){
+			require(['text!private/templates/contentPageTemplate.html'], function(template){
 				
 				if(!t.template) t.template = _.template( template );
 
