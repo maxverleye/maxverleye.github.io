@@ -16,9 +16,9 @@ module.exports = function(grunt) {
 				},
 				files: [{
 			        expand: true,
-			        cwd: 'app/scss/',
+			        cwd: '../scss/',
 			        src: ['main.scss'],
-			        dest: 'app/css/',
+			        dest: '../css/',
 			        ext: '.min.css'
 			    }]
 			}
@@ -29,13 +29,13 @@ module.exports = function(grunt) {
                  map : false
             },
             css: {
-                src: "app/css/main.min.css",
-                dest: "app/css/main.min.css"
+                src: "../css/main.min.css",
+                dest: "../css/main.min.css"
             }
         },
 		watch: {
 			sass: {
-				files: 'app/scss/**',
+				files: '../scss/**',
 				tasks: ['sass', 'autoprefixer'],
 				options: {
 				  interrupt: true
