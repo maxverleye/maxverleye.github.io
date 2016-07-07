@@ -1,0 +1,20 @@
+{
+	"firstName": "Max",
+	"lastName": "Verleye",
+	"dateOfBirth": "26 feb 1986",
+	"email": "maximeverleye@gmail.com",
+	"login": "maxverleyyye",
+	"address": "rue des bouchers",
+	"interests": [
+		{
+			"id":"1",
+			"name":"Sport"
+		}
+	],
+	"brands":[
+		{
+			"id":"1",
+			"name":"Marlboro"
+		}
+	]
+}

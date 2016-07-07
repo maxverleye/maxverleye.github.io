@@ -1,0 +1,29 @@
+
+
+	<div class="page_content">
+		
+		<section id="post" class="content_detail">
+			<div class="picture_header" style="background-image:url(<%- item.img %>);"></div>
+			
+			<div class="editorial_content post_body_container">
+				<h3 class="post_title"><%- item.title %></h3>
+				<div class="post_info">
+					<%- item.plublicationDate %>, in <a href="#/posts/<%= item.categorySlug %>"><%= item.categoryName %></a>
+				</div>
+				<p class='post_intro'><%- item.intro %></p>
+				<div class='post_content'><%= item.content %></div>
+			</div>
+
+		</section>
+
+		<div class="sidebar">
+			<section class="sidebar_content">
+				<h3>Related Content</h3>
+				<div class="related_content_container">
+					
+				</div>
+			</section>
+		</div>
+
+	</div>
+

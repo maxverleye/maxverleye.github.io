@@ -1,0 +1,11 @@
+	<ul>
+		<% _.each(posts, function(item, index) { %>
+		<li class='item'>
+			<div class="picture_thumb" style="background-image:url(img/post/<%- item.id %>_ecosystem_banner.png);"></div>
+			<div class="post_title"><a href="#/content/<%- item.id %>"><%- item.title %></a></div>
+			<small class="post_info">
+				<%- item.plublicationDate %>, in <a href="#/posts/<%= item.categorySlug %>"><%= item.categoryName %></a>
+			</small>
+		</li>
+		<% }); %>
+	</ul>

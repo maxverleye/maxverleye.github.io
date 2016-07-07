@@ -1,0 +1,10 @@
+	<ul>
+		<% _.each(posts, function(item, index) { %>
+		<li class='item'>
+			
+			<h3 class="post_title"><a href="#/content/<%- item.id %>"><%- item.title %></a></h3>
+			<p class='post_intro'><%- item.intro %></p>
+			
+		</li>
+		<% }); %>
+	</ul>

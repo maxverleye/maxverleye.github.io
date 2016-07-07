@@ -1,0 +1,35 @@
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+		border-color:transparent transparent transparent $dark;
+	}
+	
+	15% {
+		border-color:transparent transparent transparent $dark;
+	}
+	
+	30% {
+		border-color:transparent transparent $dark $dark;
+	}
+	
+	45% {
+		border-color:transparent $dark $dark $dark;
+	}
+	
+	60% {
+		border-color:transparent $dark $dark $dark;
+	}
+	
+	75% {
+		border-color:transparent transparent $dark $dark;
+	}
+
+	90% {
+		border-color:transparent transparent transparent $dark;
+	}
+	
+	100% {
+		transform: rotate(1440deg);
+		border-color:transparent transparent transparent $dark;
+	}
+}

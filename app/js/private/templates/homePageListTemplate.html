@@ -1,0 +1,14 @@
+	<ul>
+		<% _.each(posts, function(item, index) { %>
+		<li class='item'>
+			<a href="#/content/<%- item.id %>">
+				<div class="figure">
+					<figure style="background-image:url(img/post/<%- item.id %>_ecosystem_banner.png);">
+					</figure>
+					<h3 class="post_title"><%- item.title %></h3>
+					<p class='post_intro'><%- item.intro %></p>
+				</div>
+			</a>
+		</li>
+		<% }); %>
+	</ul>

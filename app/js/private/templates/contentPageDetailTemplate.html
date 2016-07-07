@@ -1,0 +1,10 @@
+<div class="picture_header" style="background-image:url(img/post/<%- contentId %>_ecosystem_banner.png);"></div>
+<div class="editorial_content post_body_container">
+	<h3 class="post_title"><%- item.title %></h3>
+	<div class="post_info">
+		<!-- <%- item.plublicationDate %>, in <a href="#/posts/<%= item.categorySlug %>"><%= item.categoryName %></a> -->
+		<%- item.plublicationDate %>, in <a href="#"><%= item.categoryName %></a>
+	</div>
+	<p class='post_intro'><%- item.intro %></p>
+	<div class='post_content'><%= item.content %></div>
+</div>
