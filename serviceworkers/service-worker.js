@@ -3,14 +3,14 @@ console.log("WORKER: executing.");
 var CACHE_NAME = "my-site-cache-v3",
 	shell = [
 		'',
-		'/index.html',
-		'/css/bootstrap.min.css',
-		'/css/jquery.countdown.css',
-		'/fonts/custom_font/style.css',
-		'/css/main.min.css',
-		'/js/lib/require.js',
-		'/js/start.js',
-		'/js/config.js'
+		'/serviceworkers/index.html',
+		'/serviceworkers//css/bootstrap.min.css',
+		'/serviceworkers//css/jquery.countdown.css',
+		'/serviceworkers//fonts/custom_font/style.css',
+		'/serviceworkers//css/main.min.css',
+		'/serviceworkers//js/lib/require.js',
+		'/serviceworkers//js/start.js',
+		'/serviceworkers//js/config.js'
 	];
 
 self.addEventListener('install', function(event) {
