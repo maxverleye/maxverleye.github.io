@@ -5,7 +5,7 @@ define([
     'use strict';
 
     var utils = Backbone.View.extend({
-        baseUrl: "/api/",
+        baseUrl: "/serviceworkers/api/",
         goToByScroll: function(selector, speed){
 
             var _speed = speed || 250
