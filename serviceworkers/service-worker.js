@@ -2,6 +2,7 @@
 var CACHE_NAME = "my-site-cache-v3",
 	shell = [
 		'',
+		'/serviceworkers/',
 		'/serviceworkers/index.html',
 		'/serviceworkers/css/bootstrap.min.css',
 		'/serviceworkers/css/jquery.countdown.css',
