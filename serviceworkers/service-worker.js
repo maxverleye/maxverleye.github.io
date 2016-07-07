@@ -1,5 +1,4 @@
 "use strict";
-console.log("WORKER: executing.");
 var CACHE_NAME = "my-site-cache-v3",
 	shell = [
 		'',
