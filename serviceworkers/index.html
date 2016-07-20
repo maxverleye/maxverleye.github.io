@@ -37,6 +37,23 @@
 		<link rel="stylesheet" href="css/jquery.countdown.css">
 		<link rel="stylesheet" href="fonts/custom_font/style.css">
 		<link rel="stylesheet" href="css/main.min.css">
+		
+		<script>
+		
+			/* Add feature check for Service Workers here */
+			if('serviceWorker' in navigator) {
+				navigator.serviceWorker
+					.register('/serviceworkers/service-worker.js')
+					.then(
+						function() {
+							console.log('Service Worker Registered');
+						},
+						function(){
+							console.log('Error Service workers');
+						});
+			}
+
+		</script>
 
 	</head>
 	<body>

@@ -1,5 +1,5 @@
 "use strict";
-var CACHE_NAME = "my-site-cache-v4",
+var CACHE_NAME = "my-site-cache-v1",
 	shell = [
 		'',
 		'/serviceworkers/',
@@ -30,9 +30,11 @@ self.addEventListener('fetch', function(event) {
       .then(function(response) {
         // Cache hit - return response
         if (response) {
-        	console.log('RETURN:' + response + 'from CACHE');
+          console.log('from cache: ' + response.url);
           return response;
         }
+
+        console.log('no cache found for: ' + event.request.url);
 
         // IMPORTANT: Clone the request. A request is a stream and
         // can only be consumed once. Since we are consuming this
@@ -55,6 +57,7 @@ self.addEventListener('fetch', function(event) {
 
             caches.open(CACHE_NAME)
               .then(function(cache) {
+                console.log('put in cache: ' + event.request.url);
                 cache.put(event.request, responseToCache);
               });
             return response;
